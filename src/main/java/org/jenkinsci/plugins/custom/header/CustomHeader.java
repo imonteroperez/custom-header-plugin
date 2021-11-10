@@ -3,7 +3,7 @@ package org.jenkinsci.plugins.custom.header;
 import hudson.Extension;
 import jenkins.views.Header;
 
-@Extension(optional = true, ordinal = Integer.MAX_VALUE)
+@Extension(ordinal = Integer.MAX_VALUE)
 public class CustomHeader implements Header{
 
     @Override
