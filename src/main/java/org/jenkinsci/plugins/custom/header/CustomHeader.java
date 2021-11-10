@@ -4,7 +4,7 @@ import hudson.Extension;
 import jenkins.views.Header;
 
 @Extension(optional = true, ordinal = Integer.MAX_VALUE)
-public class CustomHeader extends Header{
+public class CustomHeader implements Header{
 
     @Override
     public boolean isHeaderEnabled() {

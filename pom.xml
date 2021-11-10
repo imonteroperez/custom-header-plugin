@@ -43,7 +43,7 @@
   <properties>
     <revision>0.1</revision>
     <changelist>-SNAPSHOT</changelist>
-    <jenkins.version>2.303.2-SNAPSHOT</jenkins.version>
+    <jenkins.version>2.321-SNAPSHOT</jenkins.version>
     <java.level>8</java.level>
   </properties>
 
