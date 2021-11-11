@@ -82,7 +82,8 @@
                                        class="am-monitor-icon" >
                                 <use href="${resURL}/images/material-icons/svg-sprite-social-symbol.svg#ic_person_24px"></use>
                             </l:svgIcon>
-                            <span class="hidden-xs hidden-sm">${userName}</span>
+                            <j:invokeStatic var="label" className="org.jenkinsci.plugins.custom.header.CustomHeader" method="getHeaderLabel"/>
+                            <span class="hidden-xs hidden-sm">${label} - ${userName}</span>
                         </a>
                         <j:if test="${app.securityRealm.canLogOut()}">
                             <a href="${rootURL}/logout">
