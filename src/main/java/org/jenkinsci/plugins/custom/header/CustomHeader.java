@@ -16,6 +16,6 @@ public class CustomHeader extends Header{
     }
     
     public static String getHeaderLabel(){
-        return "Hello World!"; // This label content could be retrieved programatically
+        return "Hello World!"; // This label content could be retrieved programmatically
     }
 }
