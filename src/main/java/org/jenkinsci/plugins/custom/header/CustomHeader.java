@@ -1,10 +1,11 @@
 package org.jenkinsci.plugins.custom.header;
 
 import hudson.Extension;
-import jenkins.views.Header;
+import hudson.util.VersionNumber;
+import jenkins.views.PartialHeader;
 
 @Extension(ordinal = Integer.MAX_VALUE)
-public class CustomHeader extends Header{
+public class CustomHeader extends PartialHeader{
 
     @Override
     public boolean isEnabled() {
@@ -17,5 +18,10 @@ public class CustomHeader extends Header{
     
     public static String getHeaderLabel(){
         return "Hello World!"; // This label content could be retrieved programmatically
+    }
+
+    @Override
+    public VersionNumber getVersion() {
+        return new VersionNumber("1.0");
     }
 }
