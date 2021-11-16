@@ -7,7 +7,7 @@ import jenkins.views.Header;
 public class CustomHeader extends Header{
 
     @Override
-    public boolean isHeaderEnabled() {
+    public boolean isEnabled() {
         // Disable/enable the header based on an ENV var and/or system property
         boolean isDisabled = System.getProperty(CustomHeader.class.getName() + ".disable") != null ?
                 "true".equalsIgnoreCase(System.getProperty(CustomHeader.class.getName() + ".disable")) :
