@@ -1,7 +1,6 @@
 package org.jenkinsci.plugins.custom.header;
 
 import hudson.Extension;
-import hudson.util.VersionNumber;
 import jenkins.views.PartialHeader;
 
 @Extension(ordinal = Integer.MAX_VALUE)
