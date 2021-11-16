@@ -21,7 +21,7 @@ public class CustomHeader extends PartialHeader{
     }
 
     @Override
-    public VersionNumber getVersion() {
-        return new VersionNumber("1.0");
+    public int getSupportedHeaderVersion() {
+        return 1;
     }
 }
